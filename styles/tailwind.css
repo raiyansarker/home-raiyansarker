@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Fonts */
+  @font-face {
+    font-family: Roboto;
+    src: url(/fonts/Roboto-Light.ttf);
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-SemiBold.ttf);
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: url(/fonts/Roboto-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: url(/fonts/Roboto-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply !font-inter;
+  }
+}
+
+@layer components {
+  /* Scrollbar */
+  body::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  body::-webkit-scrollbar:horizontal {
+    height: 11.5px;
+  }
+
+  body::-webkit-scrollbar:vertical {
+    width: 11.5px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.33);
+    border: 2px solid #fff;
+    border-radius: 8px;
+  }
+
+  body {
+    @apply font-roboto overflow-x-hidden;
+  }
+}
